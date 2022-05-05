@@ -1,29 +1,28 @@
-html{
+html {
  box-sizing: border-box;
 }
 
 *,
 *::before,
-*::after{
+*::after {
  box-sizing: inherit;
 }
 
 
-
-a{
+a {
  display: inline-block;
  text-decoration: none;
  color: $text;
 }
 
 ul,
-li{
+li {
  margin: 0;
  padding: 0;
  list-style: none;
 }
 
-body{
+body {
  font-family: Roboto-Regular, sans-serif;
  font-weight: 400;
  font-size: 15px;
@@ -35,24 +34,28 @@ html,
 body {
  height: 100%;
 }
+
 .wrapper {
  display: flex;
  flex-direction: column;
  min-height: 100%;
 }
+
 .content {
  flex: 1 0 auto;
 }
+
 .footer {
  flex: 0 0 auto;
 }
-.container{
+
+.container {
  max-width: 1200px;
  margin: 0 auto;
  padding: 0 15px;
 }
 
-.container-fluid{
+.container-fluid {
  max-width: 100%;
  margin: 0 auto;
  padding: 0 30px;
@@ -64,11 +67,11 @@ body {
  }
 }
 
-.page__content{
+.page__content {
  background-color: $grey;
 }
 
-.title{
+.title {
  color: $bg;
  font-size: 36px;
  line-height: 60px;
@@ -77,36 +80,54 @@ body {
  @include f700;
 }
 
-.rate-star{
+.rate-star {
  display: inline-block;
  margin-right: 13px;
 }
 
-.breadcrumbs{
- &__inner{
+.breadcrumbs {
+ &__inner {
   padding: 45px 0 40px;
  }
- &__list{
-  li{
+
+ &__list {
+  li {
    display: inline-block;
    position: relative;
-   & + li{
+
+   & + li {
     padding-left: 24px;
-    &::before{
+
+    &::before {
      content: '-';
      position: absolute;
      color: $green;
      left: 8px;
     }
    }
+
    &:last-child {
-    a, span{
+    a, span {
      color: $bg;
     }
    }
   }
-  a{
+
+  a {
    color: #b0bec5;
   }
+ }
+}
+
+.angle-right {
+ position: relative;
+ padding-left: 15px;
+ &::before {
+  content: '\f105';
+  font-family: icomoon;
+  position: absolute;
+  font-size: 14px;
+  left: 0;
+  color: $green;
  }
 }
