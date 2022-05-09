@@ -392,7 +392,8 @@
    position: relative;
    display: block;
    width: 100%;
-   &::before{
+
+   &::before {
     font-family: icomoon;
     position: absolute;
     color: #fff;
@@ -402,11 +403,11 @@
    }
   }
 
-  .login__label-name::before{
+  .login__label-name::before {
    content: "\f007";
   }
 
-  .login__label-pass::before{
+  .login__label-pass::before {
    content: "\f023";
   }
 
@@ -427,7 +428,8 @@
     font-size: 14px;
    }
   }
-  button{
+
+  button {
    @include f700;
    text-transform: uppercase;
    border: none;
@@ -443,7 +445,7 @@
  }
 }
 
-.creat-acc{
+.creat-acc {
  text-align: center;
  margin-top: 19px;
  text-align: center;
@@ -453,7 +455,8 @@
  width: 245px;
  color: #fff;
  position: relative;
- &::before{
+
+ &::before {
   content: "\f044";
   font-family: icomoon;
   position: absolute;
@@ -462,12 +465,13 @@
  }
 }
 
-.last-pass{
+.last-pass {
  font-size: 18px;
  display: block;
  color: #fff;
  margin-top: 20px;
 }
+
 //end modal
 
 //start search
@@ -1837,5 +1841,120 @@ button.icon-unsorted {
 }
 
 //end product-one
+//start page-404
+.page-404__wrapper {
+ border: 1px solid #dcdcdc;
+ background-color: #fff;
+ margin-bottom: 150px;
+}
+
+.page-404__head,
+.about__head{
+ @include f500;
+ font-size: 24px;
+ color: #444444;
+ padding: 23px 27px;
+ border-bottom: 1px solid #dcdcdc;
+}
+
+.page-404__inner {
+ text-align: center;
+ background-color: $green;
+ color: #fff;
+}
+
+.page-404__404 {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 300px;
+ padding-bottom: 20px;
+ font-weight: 800;
+ padding-top: 70px;
+ line-height: 300px;
+ position: relative;
+ &::before{
+  content: '';
+  position: absolute;
+  background-image: url("../../images/page-shadow.png");
+  width: 157px;
+  height: 20px;
+  right: 146px;
+  top: 349px;
+ }
+
+ &::after {
+  content: '';
+  position: absolute;
+  background-image: url("../../images/page-404.png");
+  width: 150px;
+  height: 292px;
+  margin-left: 20px;
+ }
+}
+
+.page-404__title {
+ font-size: 30px;
+ @include f300;
+ margin-bottom: 30px;
+}
+
+.page-404__text {
+ max-width: 501px;
+ font-size: 18px;
+ margin: 0 auto 60px;
+}
+
+.page-404__link {
+ color: #fff;
+ border: 1px solid #fff;
+ border-radius: 4px;
+ margin-bottom: 100px;
+ text-transform: uppercase;
+ font-size: 14px;
+ padding: 20px 30px 16px;
+}
+
+
+//end page-404
+//start about
+.about__wrapper{
+ border: 1px solid #dcdcdc;
+ background-color: #fff;
+ margin-bottom: 150px;
+}
+
+.about__head{
+ font-size: 24px;
+ @include f500;
+ color: $bg;
+ border-bottom: 1px solid #dcdcdc;
+ padding: 20px 30px;
+}
+
+.about__inner{
+ padding: 0 50px;
+}
+
+.about__box{
+
+ h3{
+  color: $bg;
+  font-size: 20px;
+  @include f700;
+  margin-top: 40px;
+  margin-bottom: 15px;
+
+ }
+ p{
+  color: #a8a8a8;
+  font-size: 15px;
+  margin-bottom: 40px;
+ }
+}
+
+//end about
+
+
+
+
 
 @import "media";
