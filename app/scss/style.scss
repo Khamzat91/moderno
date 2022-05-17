@@ -1283,8 +1283,10 @@ button.icon-unsorted {
 
 .product__page-content {
  .product__item {
+  flex-basis: calc(33.3333% - 30px);
   max-width: 270px;
   transition: all .5s;
+  margin-left: 30px;
  }
 
  .product__item-img {
@@ -1319,9 +1321,10 @@ button.icon-unsorted {
 
 .product__page-items {
  display: flex;
- justify-content: space-between;
+ justify-content: flex-start;
  flex-wrap: wrap;
  margin-bottom: 30px;
+ margin-left: -30px;
 }
 
 .pagination__list {
@@ -1403,6 +1406,7 @@ button.icon-unsorted {
 
  &.list {
   max-width: 100%;
+  flex-basis: 100%;
 
   .product__item-img {
    width: 240px;
